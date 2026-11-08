@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────
+   ኄር የበጎ አድራጎት ማህበር — Design tokens
+   Brand color taken from the official logo (navy #0B2545).
+   ───────────────────────────────────────────────────────────── */
+
+@theme {
+  /* Typography — Latin display / body fonts, Ethiopic fallback.
+     Ethiopic characters automatically fall through to
+     Noto Sans Ethiopic because Fraunces / Manrope have no
+     Ethiopic glyphs. */
+  --font-display: var(--font-fraunces), var(--font-noto-ethiopic), ui-serif,
+    Georgia, serif;
+  --font-sans: var(--font-manrope), var(--font-noto-ethiopic), ui-sans-serif,
+    system-ui, sans-serif;
+  --font-ethiopic: var(--font-noto-ethiopic), ui-sans-serif, sans-serif;
+
+  /* Deep navy — the logo color, plus tints */
+  --color-navy-50: #eef2f7;
+  --color-navy-100: #d7e0eb;
+  --color-navy-200: #b3c4d8;
+  --color-navy-300: #8aa3bf;
+  --color-navy-400: #5f7fa0;
+  --color-navy-500: #3e6083;
+  --color-navy-600: #2c4a68;
+  --color-navy-700: #1f3a55;
+  --color-navy-800: #16304a;
+  --color-navy-900: #0b2545; /* ← brand navy from the logo */
+  --color-navy-950: #071a32;
+
+  /* Warm gold accent — hope / generosity */
+  --color-gold-50: #fbf6e9;
+  --color-gold-100: #f6ebcd;
+  --color-gold-200: #eed9a4;
+  --color-gold-300: #e3c273;
+  --color-gold-400: #d9ad4e;
+  --color-gold-500: #c9973b;
+  --color-gold-600: #b3822e;
+  --color-gold-700: #926a26;
+
+  /* Warm off-whites */
+  --color-cream-50: #faf8f4;
+  --color-cream-100: #f4f0e8;
+  --color-cream-200: #e9e3d6;
+  --color-cream-300: #dcd3c0;
+
+  --shadow-soft: 0 1px 2px rgb(11 37 69 / 0.05), 0 8px 24px -12px rgb(11 37 69 / 0.12);
+  --shadow-lift: 0 2px 4px rgb(11 37 69 / 0.06), 0 18px 40px -16px rgb(11 37 69 / 0.22);
+}
+
+/* ── Base ─────────────────────────────────────────────────── */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-gold-200);
+  color: var(--color-navy-950);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold-500);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ── Scroll-reveal animation ──────────────────────────────── */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ── Hero photo slow zoom ─────────────────────────────────── */
+
+@keyframes hero-zoom {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.hero-zoom {
+  animation: hero-zoom 2.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-zoom {
+    animation: none;
+  }
+}
+
+/* ── Mobile menu ──────────────────────────────────────────── */
+
+.menu-overlay {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.menu-overlay[data-open="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+.menu-item {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+.menu-overlay[data-open="true"] .menu-item {
+  opacity: 1;
+  transform: none;
+}
