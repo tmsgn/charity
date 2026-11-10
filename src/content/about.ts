@@ -10,8 +10,8 @@ export const aboutHero = {
   title: { am: "ስለ እኛ", en: "About Us" } satisfies LocalizedString,
 
   subtitle: {
-    am: "ኄር የበጎ አድራጎት ማህበር የተመሠረተው አንድ ማኅበረሰብ ለራሱ በሚሠራ ታማኝ እጅ ነው።",
-    en: "Kher Charity Association exists because a community can lift itself when its people stand together.",
+    am: "ኄር የበጎ አድራጎት ማህበር የተመሠረተው አንድ ማኅበረሰብ ለራሱ በሚሠራ ታማኝ እጅ ነው",
+    en: "Kher Charity Association exists because a community can lift itself when its people stand together",
   } satisfies LocalizedString,
 };
 

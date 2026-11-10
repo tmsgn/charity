@@ -8,8 +8,8 @@ export const contactHero = {
   title: { am: "ያግኙን", en: "Contact" } satisfies LocalizedString,
 
   subtitle: {
-    am: "ጥያቄ፣ ምክር ወይም የመተባበር እድል ካለዎት — እንወያለን።",
-    en: "Questions, ideas, or a wish to collaborate — we would love to hear from you.",
+    am: "ጥያቄ፣ ምክር ወይም የመተባበር እድል ካለዎት — እንወያለን",
+    en: "Questions, ideas, or a wish to collaborate — we would love to hear from you",
   } satisfies LocalizedString,
 };
 

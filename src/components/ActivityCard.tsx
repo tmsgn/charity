@@ -34,11 +34,11 @@ export default function ActivityCard({
           alt={t(imageAlt)}
           fill
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-          className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+          className="object-cover"
         />
       </div>
       <div className="flex flex-1 flex-col p-6">
-        <p className="inline-flex items-center gap-1.5 text-xs font-medium uppercase tracking-wide text-navy-500">
+        <p className="inline-flex items-center gap-1.5 text-xs font-medium text-navy-500">
           <CalendarDays className="h-3.5 w-3.5 text-gold-600" aria-hidden />
           {t(date)}
         </p>

@@ -61,7 +61,7 @@ export default function Footer() {
 
           {/* Navigation */}
           <nav aria-label="Footer">
-            <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-cream-50">
+            <h2 className="text-sm font-semibold text-cream-50">
               {t({ am: "ገጾች", en: "Pages" })}
             </h2>
             <ul className="mt-5 space-y-3 text-sm">
@@ -88,7 +88,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-cream-50">
+            <h2 className="text-sm font-semibold text-cream-50">
               {t({ am: "ያግኙን", en: "Contact" })}
             </h2>
             <ul className="mt-5 space-y-4 text-sm">

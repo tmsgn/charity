@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Logo from "@/components/Logo";
 import { org } from "@/content/site";
 import { useLanguage } from "@/lib/i18n";
@@ -30,7 +30,7 @@ export default function NotFound() {
           className="mt-10 inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 px-8 py-4 text-sm font-semibold text-navy-950 transition-colors hover:bg-gold-400"
         >
           {t({ am: "ወደ መነሻ ገጽ", en: "Back to homepage" })}
-          <ArrowLeft className="h-4 w-4" aria-hidden />
+          <ArrowRight className="h-4 w-4" aria-hidden />
         </Link>
         <p className="mt-8 text-sm text-cream-200/50">{t(org.name)}</p>
       </div>

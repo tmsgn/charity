@@ -13,8 +13,8 @@ export const hero = {
 
   // Main headline — the central message of the organization.
   headline: {
-    am: "አንድ ትንሽ የመርዳት እጅ ትልቅ ለውጥ ይፈጥራል።",
-    en: "Small acts of kindness create meaningful change.",
+    am: "አንድ ትንሽ የመርዳት እጅ ትልቅ ለውጥ ይፈጥራል",
+    en: "Small acts of kindness create meaningful change",
   } satisfies LocalizedString,
 
   subtitle: {
@@ -172,8 +172,8 @@ export const getInvolvedSection = {
 
 export const finalCta = {
   title: {
-    am: "ዛሬ የሚያደርጉት እርምጃ የአንደኛ ተስፋ ይሆናል።",
-    en: "The step you take today becomes someone's hope tomorrow.",
+    am: "ዛሬ የሚያደርጉት እርምጃ የአንደኛ ተስፋ ይሆናል",
+    en: "The step you take today becomes someone's hope tomorrow",
   } satisfies LocalizedString,
 
   text: {

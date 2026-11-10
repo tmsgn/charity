@@ -13,8 +13,8 @@ export const workHero = {
   title: { am: "ሥራችን", en: "Our Work" } satisfies LocalizedString,
 
   subtitle: {
-    am: "ኄር የበጎ አድራጎት ማህበር የሚሠራበት የሥራ መስኮችና አካሄዱ በዚህ ገጽ ላይ ተብራርቷል።",
-    en: "The areas we focus on and how our work takes shape are outlined on this page.",
+    am: "ኄር የበጎ አድራጎት ማህበር የሚሠራበት የሥራ መስኮችና አካሄዱ በዚህ ገጽ ላይ ተብራርቷል",
+    en: "The areas we focus on and how our work takes shape are outlined on this page",
   } satisfies LocalizedString,
 };
 

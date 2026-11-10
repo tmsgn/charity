@@ -23,7 +23,7 @@ export default function AboutView() {
       <section className="py-20 sm:py-28" aria-labelledby="story-title">
         <div className="mx-auto grid max-w-6xl items-center gap-14 px-6 lg:grid-cols-2">
           <Reveal>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-gold-600">
+            <p className="text-sm font-semibold text-gold-600">
               {t(story.eyebrow)}
             </p>
             <h2

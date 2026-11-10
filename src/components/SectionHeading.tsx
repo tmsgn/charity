@@ -28,7 +28,7 @@ export default function SectionHeading({
   return (
     <div className={`max-w-2xl ${alignment} ${className}`}>
       <p
-        className={`text-sm font-semibold tracking-[0.18em] uppercase ${
+        className={`text-sm font-semibold ${
           tone === "light" ? "text-gold-300" : "text-gold-600"
         }`}
       >

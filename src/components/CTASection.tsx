@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, HeartHandshake } from "lucide-react";
+import { ArrowRight, HeartHandshake } from "lucide-react";
 import type { LocalizedString } from "@/lib/types";
 import { useLanguage } from "@/lib/i18n";
 import Reveal from "./Reveal";
@@ -64,7 +64,7 @@ export default function CTASection({
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold-500 px-7 py-3.5 text-sm font-semibold text-navy-950 transition-colors hover:bg-gold-400 sm:w-auto"
               >
                 {t(primary.label)}
-                <ArrowLeft className="h-4 w-4 rtl:rotate-180" aria-hidden />
+                <ArrowRight className="h-4 w-4" aria-hidden />
               </Link>
               {secondary ? (
                 <Link

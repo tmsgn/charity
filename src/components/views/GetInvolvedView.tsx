@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
-  ArrowLeft,
+  ArrowRight,
   CheckCircle2,
   Handshake,
   Heart,
@@ -90,7 +90,7 @@ export default function GetInvolvedView() {
                   className="mt-8 inline-flex items-center gap-2 rounded-full bg-navy-900 px-7 py-3.5 text-sm font-semibold text-cream-50 transition-colors hover:bg-navy-800"
                 >
                   {t({ am: "በመልእክት ይጀምሩ", en: "Start with a message" })}
-                  <ArrowLeft className="h-4 w-4" aria-hidden />
+                  <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
               </Reveal>
             </div>
@@ -113,7 +113,7 @@ export default function GetInvolvedView() {
                   {t(donate.intro)}
                 </p>
 
-                <h3 className="mt-8 text-sm font-semibold uppercase tracking-[0.14em] text-navy-500">
+                <h3 className="mt-8 text-sm font-semibold text-navy-500">
                   {t(donate.waysLabel)}
                 </h3>
                 <ul className="mt-4 grid gap-3 sm:grid-cols-2">
@@ -144,7 +144,7 @@ export default function GetInvolvedView() {
                     className="mt-5 inline-flex items-center gap-2 rounded-full bg-navy-900 px-6 py-3 text-sm font-semibold text-cream-50 transition-colors hover:bg-navy-800"
                   >
                     {t({ am: "ጥያቄ ያለዎት? ያግኙን", en: "Questions? Contact us" })}
-                    <ArrowLeft className="h-4 w-4" aria-hidden />
+                    <ArrowRight className="h-4 w-4" aria-hidden />
                   </Link>
                 </div>
               </Reveal>
@@ -200,7 +200,7 @@ export default function GetInvolvedView() {
                   className="mt-8 inline-flex items-center gap-2 rounded-full bg-navy-900 px-7 py-3.5 text-sm font-semibold text-cream-50 transition-colors hover:bg-navy-800"
                 >
                   {t({ am: "የመተባበር እድል ይወያሉ", en: "Discuss a collaboration" })}
-                  <ArrowLeft className="h-4 w-4" aria-hidden />
+                  <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
               </Reveal>
             </div>
@@ -244,8 +244,8 @@ export default function GetInvolvedView() {
 
       <CTASection
         title={{
-          am: "እናመሰግናለን — አብረን እንቀጥላለን።",
-          en: "Thank you — let's keep going together.",
+          am: "እናመሰግናለን — አብረን እንቀጥላለን",
+          en: "Thank you — let's keep going together",
         }}
         text={{
           am: "የሚያስተዋጡበት መንገድ ማንኛውም ይሁን፣ አስተዋጽኦዎ ለአንድ ሰው የተስፋ እጅ ይሆናል።",

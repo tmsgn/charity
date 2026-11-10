@@ -30,7 +30,7 @@ function ContactCard({ icon: Icon, label, value, href }: CardProps) {
         <Icon className="h-5 w-5" aria-hidden />
       </span>
       <div className="min-w-0">
-        <p className="text-xs font-semibold uppercase tracking-[0.12em] text-navy-500">
+        <p className="text-xs font-semibold text-navy-500">
           {label}
         </p>
         <div className="mt-1 break-words text-sm sm:text-base">{content}</div>

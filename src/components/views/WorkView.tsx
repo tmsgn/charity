@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, Info, Users } from "lucide-react";
+import { ArrowRight, Info, Users } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
@@ -118,7 +118,7 @@ export default function WorkView() {
                 className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-navy-900 px-8 py-4 text-sm font-semibold text-cream-50 transition-colors hover:bg-navy-800"
               >
                 {t(participate.cta.label)}
-                <ArrowLeft className="h-4 w-4" aria-hidden />
+                <ArrowRight className="h-4 w-4" aria-hidden />
               </Link>
             </div>
           </Reveal>

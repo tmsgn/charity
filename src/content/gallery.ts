@@ -13,8 +13,8 @@ export const galleryHero = {
   title: { am: "ፎቶዎች", en: "Gallery" } satisfies LocalizedString,
 
   subtitle: {
-    am: "የማኅበሩ እንቅስቃሴዎችና የማኅበረሰቡ ምስሎች።",
-    en: "Moments from our activities and community life.",
+    am: "የማኅበሩ እንቅስቃሴዎችና የማኅበረሰቡ ምስሎች",
+    en: "Moments from our activities and community life",
   } satisfies LocalizedString,
 };
 

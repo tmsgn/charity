@@ -11,8 +11,8 @@ export const involvedHero = {
   title: { am: "ይሳተፉ", en: "Get Involved" } satisfies LocalizedString,
 
   subtitle: {
-    am: "በተለያዩ መንገዶች ለለውጡ አብረው ማሰብ ይቻላል። የሚመችዎትን መንገድ ይምረጡ።",
-    en: "There is a place for everyone who wants to help. Choose the way that fits you.",
+    am: "በተለያዩ መንገዶች ለለውጡ አብረው ማሰብ ይቻላል። የሚመችዎትን መንገድ ይምረጡ",
+    en: "There is a place for everyone who wants to help. Choose the way that fits you",
   } satisfies LocalizedString,
 };
 

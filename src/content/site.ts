@@ -15,8 +15,8 @@ export const org = {
 
   // ⚠️ PLACEHOLDER — replace with the official tagline once chosen.
   tagline: {
-    am: "ትንሽ የሩኅሩህነት እጆች ትልቅ ለውጥ ይፈጥራሉ።",
-    en: "Small acts of kindness create meaningful change.",
+    am: "ትንሽ የሩኅሩህነት እጆች ትልቅ ለውጥ ይፈጥራሉ",
+    en: "Small acts of kindness create meaningful change",
   } satisfies LocalizedString,
 
   // ⚠️ PLACEHOLDER — short description used in the footer and metadata.

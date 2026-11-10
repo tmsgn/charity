@@ -36,7 +36,7 @@ export default function PageHero({ title, subtitle, eyebrow }: PageHeroProps) {
       <div className="relative mx-auto max-w-6xl px-6 pb-20 pt-36 sm:pb-24 sm:pt-40">
         <div className="max-w-2xl">
           {eyebrow ? (
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-gold-300">
+            <p className="text-sm font-semibold text-gold-300">
               {t(eyebrow)}
             </p>
           ) : null}

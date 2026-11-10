@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
-  ArrowLeft,
   ArrowRight,
   Compass,
   Eye,
@@ -86,7 +85,7 @@ export default function HomeView() {
 
         <div className="relative mx-auto w-full max-w-6xl px-6 pb-20 pt-36">
           <Reveal>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold-300">
+            <p className="text-sm font-semibold text-gold-300">
               {t(hero.eyebrow)}
             </p>
             <h1 className="mt-6 max-w-3xl font-display text-4xl leading-[1.25] text-cream-50 sm:text-5xl lg:text-6xl">
@@ -101,7 +100,7 @@ export default function HomeView() {
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 px-8 py-4 text-sm font-semibold text-navy-950 transition-colors hover:bg-gold-400"
               >
                 {t(hero.primaryCta.label)}
-                <ArrowLeft className="h-4 w-4" aria-hidden />
+                <ArrowRight className="h-4 w-4" aria-hidden />
               </Link>
               <Link
                 href={hero.secondaryCta.href}
@@ -167,7 +166,7 @@ export default function HomeView() {
           </Reveal>
 
           <Reveal delay={120}>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-gold-600">
+            <p className="text-sm font-semibold text-gold-600">
               {t(intro.eyebrow)}
             </p>
             <h2
@@ -345,7 +344,7 @@ export default function HomeView() {
               <Reveal key={card.href} delay={i * 80}>
                 <Link
                   href={card.href}
-                  className="group flex h-full flex-col items-start rounded-2xl border border-navy-100 bg-cream-50 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-gold-300 hover:shadow-lift"
+                  className="group flex h-full flex-col items-start rounded-2xl border border-navy-100 bg-cream-50 p-7 transition-[border-color,box-shadow] duration-300 hover:border-gold-300 hover:shadow-lift"
                 >
                   <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-navy-900 text-gold-300 transition-colors group-hover:bg-gold-500 group-hover:text-navy-950">
                     <card.icon className="h-6 w-6" aria-hidden />
